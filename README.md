@@ -12,13 +12,15 @@ pip install requirements.txt
 You will require the following API keys
 
 | API Name      | Purpose       
-| ------------- |:-------------:| 
+| ------------- |:-------------:|
 | Aylien SDK    | Text summarization and NLP |
 | Twilio SDK    | To send SMS      |
+| IMO API       | To clarif medical terminal      |
 | Microsoft Cognitive services| For TTS and STT |
 
+
 ##Usage
-The following command will start the terminal chat-bot 
+The following command will start the terminal chat-bot
 ```python
 python fml-ms.py
 ```

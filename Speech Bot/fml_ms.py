@@ -61,7 +61,6 @@ EXIT_COMMANDS = ["quit","close","exit","end","shut up","shut down","goodbye","fu
 
 
 
-
 def say(word,filename):
     microsoft_api.get_tts(ACCESS_TOKEN,"output.wav",str(word))
     microsoft_api.speak()
