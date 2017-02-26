@@ -17,18 +17,17 @@ You will require the following API keys
 | Twilio SDK    | To send SMS      |
 | Microsoft Cognitive services| For TTS and STT |
 
-
-##How We Built It
-We first worked on making a wrapper for the Microsoft Cognitive services TTS and STT API. We then worked with text analysis API like Aylien to summarize the ton of text we got from scraping Wikipedia and DBpedia. Then we added the Alexa skill and finally the pregnancy advice and Twilio SMS.
-
-##Challenges We Ran Into
-Microsoft did not have wrappers or SDKs or proper (python) docs for calling their API. So we spent the good portion of an 8hrs building and implementation our own TTS and STT for the bot. Thanks to the Facebook and Microsoft mentors for helping us out with this
-
-##Accomplishments that we're proud of
-A working Microsoft Conversation wrapper for python :). Also making our extremely rudimentary terminal Chatbot
-
-##What we learned
-Open-source projects with poor documentation are a pain-in-the-a**. Also, using new Text Analysis APIs like Aylien.
+##Usage
+The following command will start the terminal chat-bot 
+```python
+python fml-ms.py
+```
+The following command will start the Alexa flask app
+```python
+python Quireir.py
+```
+Use ngrok and put the http link in Amazon Developer Program
+For pregnancy_scraper.py, alyien.py use them like normal python classes
 
 ##What's next for MediBot
 Expand the chatbot to support more medical advice for things like cancer, hernia etc
