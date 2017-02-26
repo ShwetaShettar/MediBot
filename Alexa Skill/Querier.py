@@ -36,18 +36,16 @@ def trimester(answer):
     elif session.attributes['answers'] == "second":
     	output = responses.second.encode("utf-8")
     	ps.second_trimester_todo()
-    elif session.attributes['answers'] == "third":
-        output = responses.third.encode("utf-8")
-        ps.third_trimester_todo()
     else:
-    	output = output
+    	output = responses.third.encode("utf-8")
+    	ps.third_trimester_todo()
     return statement(output)
 
 
 @ask.intent("MedicalQueryIntent", convert={'answer': str})
 def start_query(answer):
     session.attributes['answers'] = answer
-    if answer.lower() == "pregnant":
+    if "pregnant" in answer.lower():
     	return pregnant_case()
     print answer
     if session.attributes['answers'] == "Can You Please Repeat That":

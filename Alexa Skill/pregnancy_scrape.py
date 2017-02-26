@@ -7,8 +7,8 @@ pregeers_file = open("pregnancy.txt","r")
 
 
 # Find these values at https://twilio.com/user/account
-account_sid = 
-auth_token = 
+account_sid =  #TODO
+auth_token = #TODO
 client = TwilioRestClient(account_sid, auth_token)
 
 
