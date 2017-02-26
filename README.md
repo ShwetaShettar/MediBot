@@ -1,8 +1,8 @@
 # MediBot
 ##What It Does
 MediBot has 2 components:
-1.  Alexa Skill with Twilio-SMS-Pregnancy
-2.  A based-Terminal text-to-speech and speech-to-text bot (was originally supposed to be on the pi)
+*  Alexa Skill with Twilio-SMS-Pregnancy
+*  A based-Terminal text-to-speech and speech-to-text bot (was originally supposed to be on the pi)
 Explanation for medical terminology was enabled in both
 
 ##How We Built It
