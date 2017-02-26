@@ -8,7 +8,6 @@ app = Flask(__name__)
 @app.route('/api', methods=['GET'])
 def get_query():
     if 'geography' in request.args:
-        print request.args["geography"]
         return jsonify(key="value")
 
 @app.errorhandler(404)

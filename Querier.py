@@ -18,9 +18,9 @@ def begin_session():
 	session.attributes['answers']=""
 	return question(start_msg)
 
-# @ask.intent("Default")
-# def default_case():
-# 	return question("I didn't quite get that, can you please repeat?")
+@ask.intent("Pregnant")
+def pregnant_case():
+	return statement("Listen, and listen closely. Step 1: Get off Google.")
 @ask.intent("MedicalQueryIntent",convert={'answer':str})
 def start_query(answer):
 	session.attributes['answers'] = answer
