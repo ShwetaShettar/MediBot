@@ -9,6 +9,15 @@ Explanation for medical terminology was enabled in both
 ```python
 pip install requirements.txt
 ```
+You will require the following API keys
+
+| API Name      | Purpose       
+| ------------- |:-------------:| 
+| Aylien SDK    | Text summarization and NLP |
+| Twilio SDK    | To send SMS      |
+| Microsoft Cognitive services| For TTS and STT |
+
+
 ##How We Built It
 We first worked on making a wrapper for the Microsoft Cognitive services TTS and STT API. We then worked with text analysis API like Aylien to summarize the ton of text we got from scraping Wikipedia and DBpedia. Then we added the Alexa skill and finally the pregnancy advice and Twilio SMS.
 
