@@ -5,6 +5,10 @@ MediBot has 2 components:
 *  A based-Terminal text-to-speech and speech-to-text bot (was originally supposed to be on the pi)
 Explanation for medical terminology was enabled in both
 
+##Build
+```python
+pip install requirements.txt
+```
 ##How We Built It
 We first worked on making a wrapper for the Microsoft Cognitive services TTS and STT API. We then worked with text analysis API like Aylien to summarize the ton of text we got from scraping Wikipedia and DBpedia. Then we added the Alexa skill and finally the pregnancy advice and Twilio SMS.
 
@@ -19,5 +23,3 @@ Open-source projects with poor documentation are a pain-in-the-a**. Also, using 
 
 ##What's next for MediBot
 Expand the chatbot to support more medical advice for things like cancer, hernia etc
-
-##All Dependencies Listed under Requirements.txt
