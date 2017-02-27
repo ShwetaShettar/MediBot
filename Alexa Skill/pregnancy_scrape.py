@@ -2,13 +2,14 @@ from twilio.rest import TwilioRestClient
 # -*- coding: utf-8 -*-
 
 pregeers_file = open("pregnancy.txt","r")
+twill_keys = open("twillio_keys.txt","r")
 # /usr/bin/env python
 # Download the twilio-python library from http://twilio.com/docs/libraries
 
 
 # Find these values at https://twilio.com/user/account
-account_sid =  #TODO
-auth_token = #TODO
+account_sid =  twill_keys.readline().replace("\n","")
+auth_token = twill_keys.readline().replace("\n","")
 client = TwilioRestClient(account_sid, auth_token)
 
 
